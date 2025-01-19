@@ -1,0 +1,9 @@
+quarkus:
+  log:
+    level: INFO
+    category:
+      "com.github.cchillen":
+        level: DEBUG
+  hibernate-orm:
+    log:
+      sql: true

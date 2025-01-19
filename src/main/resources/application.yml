@@ -1,0 +1,7 @@
+quarkus:
+  banner: false
+  keycloak:
+    devservices:
+      enabled: false
+greeting:
+  message: "hello"
