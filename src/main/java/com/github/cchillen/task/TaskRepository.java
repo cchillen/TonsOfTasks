@@ -1,4 +1,8 @@
 package com.github.cchillen.task;
 
-public class TaskRepository {
+import io.quarkus.hibernate.orm.panache.PanacheRepositoryBase;
+import jakarta.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
+public class TaskRepository implements PanacheRepositoryBase<TaskEntity, Long> {
 }

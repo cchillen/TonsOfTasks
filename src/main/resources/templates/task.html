@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tons of Tasks</title>
+</head>
+<body>
+    <h1>Task List</h1>
+    <ul>
+        {#for task in tasks}
+            <li>
+                <strong>{task.title}</strong>
+                {task.description}
+                {#if task.isCompleted}
+                    <span style="color: green;">(Completed)</span>
+                {/if}
+            </li>
+
+        {/for}
+    </ul>
+</body>
+</html>

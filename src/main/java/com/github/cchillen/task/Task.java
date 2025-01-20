@@ -1,4 +1,13 @@
 package com.github.cchillen.task;
 
-public class Task {
+import jakarta.validation.constraints.NotEmpty;
+
+public record Task (
+        Long taskId,
+        @NotEmpty(message = "{Task.title.required}")
+        String title,
+        String description,
+        @NotEmpty(message = "{Task.isCompleted.required}")
+        boolean isCompleted
+){
 }
