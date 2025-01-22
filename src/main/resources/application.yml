@@ -8,5 +8,3 @@ quarkus:
   hibernate-orm:
     database:
       generation: update
-greeting:
-  message: "hello"

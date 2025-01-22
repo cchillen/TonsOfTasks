@@ -27,10 +27,6 @@ public class TaskResource {
     @Produces(MediaType.TEXT_HTML)
     public TemplateInstance getTasks() {
         List<Task> tasks = repository.findAll().stream().map(mapper::toDomain).collect(Collectors.toList());
-        tasks.add(new Task(1l, "test", "hello", false));
-
-        System.out.println(task);
-        System.out.println(tasks);
         return task.data("tasks", tasks);
     }
 }
